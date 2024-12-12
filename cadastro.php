@@ -33,10 +33,10 @@
                     <input type="number" class="form-control" name="numero" id="idnumero" placeholder="Número do candidato" min="10000" max="99999" required><br>
                     <input type="email" class="form-control" name="email" id="idemail" placeholder="Email" required><br>
                     <input type="password" class="form-control" name="senha" id="idsenha" placeholder="Senha" required><br>
-                    <input type="submit" value="Cadastrar" class="btn btn-success">
+                    <div class="row justify-content-center"><input type="submit" value="Cadastrar" class="btn btn-success w-25"></div>
                 </form>
                 <br>
-                <a href="index.html" class="btn btn-primary">Retornar</a>
+                <div class="row justify-content-center"><a href="index.php" class="btn btn-primary w-25">Retornar</a></div>
             </div>
         </div>
     </div>
