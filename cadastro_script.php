@@ -12,7 +12,11 @@
         $result = "INSERT INTO `usuarios`(`nome`, `sexo`, `partido`, `estado`, `numero`, `email`, `senha`) VALUES ('$nome','$sexo','$partido','$estado','$numero','$email','$senha')";
 
         if (mysqli_query($conexao,$result)) {
-            header('Location: index.php');
+            echo "<script>
+                alert('Candidato cadastrado!');
+                window.location.href = 'index.php';
+              </script>";
+            // header('Location: index.php');
         } else
             echo "Erro";
     ?>

@@ -12,7 +12,11 @@
         if (mysqli_num_rows($result) < 1) {
             unset($_SESSION['email']);
             unset($_SESSION['senha']);
-            header('Location: index.php');
+            echo "<script>
+                alert('Conta inválida.');
+                window.location.href = 'index.php';
+              </script>";
+            // header('Location: index.php');
         } else {
             $_SESSION['email'] = $email;
             $_SESSION['senha'] = $senha;
