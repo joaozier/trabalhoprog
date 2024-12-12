@@ -29,7 +29,7 @@ $result = $conexao->query($sql);
             <div class="col">
                 <h2>Olá! Seja bem vindo(a)</h2>
             </div>
-            <div class="col">
+            <div class="col text-end">
                 <a href="sair.php" class="btn btn-danger">Sair</a>
             </div>
         </div>
